@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post a Job - MyFuture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f9f9;
+            color: #444;
+            line-height: 1.6;
+            padding: 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #2F4F6A;
+            color: #ffffff;
+            padding: 30px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-bottom: 5px solid #28a745;
+        }
+
+        header h1 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 600;
+            font-size: 3em;
+            text-align: center;
+            color: #fff;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 400;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #28a745;
+            text-decoration: underline;
+        }
+
+        /* Post a Job Section */
+        .post-job {
+            background-color: #2F4F6A;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 50px;
+            border-radius: 10px;
+        }
+
+        .post-job h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .post-job p {
+            font-size: 1.2em;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        .post-job form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-job form input, 
+        .post-job form select, 
+        .post-job form textarea {
+            width: 100%;
+            max-width: 600px;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 2px solid #ccc;
+            font-size: 1.1em;
+            transition: border 0.3s ease;
+        }
+
+        .post-job form input:focus, 
+        .post-job form select:focus, 
+        .post-job form textarea:focus {
+            border-color: #28a745;
+            outline: none;
+        }
+
+        .post-job form input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.3em;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .post-job form input[type="submit"]:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2F4F6A;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            font-size: 1.1em;
+        }
+
+        footer p {
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>MyFuture</h1>
+            <nav>
+                <ul>
+                    <li><a href="file:///C:/Users/msita/OneDrive/Documents/FBlAweb/home.html">Home</a></li>
+                    <li><a href="file:///C:/Users/msita/OneDrive/Documents/FBlAweb/about.html">About</a></li>
+                    <li><a href="file:///C:/Users/msita/OneDrive/Documents/FBlAweb/contact.html#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Post a Job Section -->
+    <section class="post-job">
+        <div class="container">
+            <h2>Post a Job</h2>
+            <p>Are you looking to hire? Fill out the form below to post a job listing.</p>
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+                <input type="text" name="job_title" placeholder="Job Title" required>
+                <input type="text" name="company_name" placeholder="Company Name" required>
+                <input type="text" name="location" placeholder="Job Location" required>
+                <select name="job_type" required>
+                    <option value="" disabled selected>Job Type</option>
+                    <option value="full-time">Full-time</option>
+                    <option value="part-time">Part-time</option>
+                    <option value="internship">Internship</option>
+                    <option value="contract">Contract</option>
+                </select>
+                <textarea name="job_description" placeholder="Job Description" rows="6" required></textarea>
+                <input type="file" name="job_file" placeholder="Upload File (Optional)">
+                <input type="submit" value="Post Job">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MyFuture | Empowering Your Career</p>
+        </div>
+    </footer>
+
+</body>
+</html>
